@@ -1,12 +1,9 @@
-:root{
-    
+:root {
     /* Primary colors */
     --Dark-Blue: hsl(233, 26%, 24%);
     --Lime-Green: hsl(136, 65%, 51%);
     --Bright-Cyan: hsl(192, 70%, 51%);
-    
     /* Neutral colors */
-    
     --Grayish-Blue: hsl(233, 8%, 62%);
     --Light-Grayish-Blue: hsl(220, 16%, 96%);
     --Very-Light-Gray: hsl(0, 0%, 98%);
@@ -21,8 +18,7 @@ FOOTTER.CSS ,
 
 O QUE ACHA?*/
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,88 +26,264 @@ O QUE ACHA?*/
     text-decoration: none;
 }
 
-body,html{
-    font-size:18px;
-    font-family:'Public Sans',sans-serif;
+body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 
-nav{
+.nav-bar-area nav{
     display:flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px;
     background-color: var(--white);
     height: 80px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--White);
+    top: 0px;
+}
+
+.nav-bar-area nav .logo{
 
 }
 
-nav .logo{
-
-}
-
-nav .menu{
+.nav-bar-area nav .menu{
     display: flex;
 }
-nav .menu li{
+.nav-bar-area nav .menu li{
     list-style: none;
 }
-nav .menu li a{
+.nav-bar-area nav .menu li a{
     color: var(--Grayish-Blue);
     font-size: 0.9rem;
     padding-left: 10px;
 }
 
-nav .btn-request a{
+.nav-bar-area nav .btn-request a{
     text-decoration: none;
     color:var(--White);
     padding: 10px 15px;
     background:linear-gradient(to left,var(--Lime-Green),var( --Bright-Cyan));
     border-radius: 20px;
     font-size: 0.8rem;
+   
     
 }
 
 /* ficou daora */
-.container{
+header{
     display: flex;
     max-width: 1440px;
     margin: 0 auto;
+    height: 80vh;
+    width: 80vw;
+    margin-top: 70px;
 }
 
-.container .main-text{
-
+header .main-text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+header .main-text h1{
+    color: var( --Dark-Blue);
+    font-size: 2rem;
+    font-weight: 400;
+   
+}
+header .main-text p{
+    font-size: 1rem;
+    color: var(--Grayish-Blue);
+    margin-top: 15px;
 }
 
-.container .img-background{
+header .main-text .btn-request{
+    text-decoration: none;
+    color:var(--White);
+    padding: 10px 15px;
+    background:linear-gradient(to left,var(--Lime-Green),var( --Bright-Cyan));
+    border-radius: 20px;
+    font-size: 0.8rem;
+    width: fit-content;
+    margin-top: 15px;
+}
+
+header .img-background{
     position:relative;
+    
+   
+    
 }
-.container .img-background object{
-    position:absolute;
+header .img-background object{
+     position: absolute;
+     top: -200px;
+  
 }
 
-.container .img-background img{
-    position:absolute;
+header .img-background img{
+    position: absolute;
+    top: -200px;
+   
+
+ 
 }
+
 
 /* as vzs dou uma sumida aqui, meu filho ta em cima */
+/* content services */
 
-/* footer */
-footer{
-    background-color: var(--Dark-Blue) ;
+.content-services{
+    background-color: var(--Very-Light-Gray);
+    padding: 60px 0;
 }
-.footer-flex{
+
+.display-text{
+    text-align: start;
+    max-width: 800px;
+    min-width: 350px;
+    margin-bottom: 50px;
+}
+
+.display-text h2{
+    margin: 20px 0;
+
+}
+
+.cards-container{
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-services, .item-article{
+    display: inline-block;
+    max-width: 350px;
+}
+.item-services h3{
+    margin: 30px 0;
+    font-weight: 400;
+
+}
+.item-services  p{
+    max-width: 320px;
+    min-width: 320px;
+    margin: 20px 0;
+    
 }
 
-.social-icons>ul>li{
+.paragraph{
+    font-weight: 400;
+    text-align: start;
+    font-size: 18px;
+    color: var(--Grayish-Blue);
+    line-height: 25px;
+}
+
+
+
+/* footer */
+
+footer {
+    background-color: var(--Dark-Blue);
+    width: 100vw;
+    height: 20vh;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr) minmax(350px, 1fr) 2fr;
+    padding: 20px 10px;
+}
+
+.social-icons object:hover {
+    color: var(--Lime-Green);
+}
+
+.social-icons ul, .social-icons img, .copy div, .copy h3 {
+    padding: 15px 0;
+}
+
+.social-icons li {
     display: inline-block;
     padding: 5px;
-
 }
-.fab{
-    font-size: 18px;
-    color: white;
+
+.fab {
+    font-size: 25px;
+    color: var(--White);
+}
+
+.sub-menu ul li {
+    padding: 8px;
+}
+
+.sub-menu ul li a {
+    color: var(--White);
+}
+
+.sub-menu ul li a:hover, .fab:hover {
+    color: var(--Lime-Green);
+}
+
+.copy {
+    width: 50%;
+    justify-self: end;
+}
+
+.copy div {
+    display: grid;
+    justify-content: end;
+}
+
+footer h3 {
+    text-align: end;
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+}
+
+.btn-footer {
+    border: none;
+    text-decoration: none;
+    color: var(--White);
+    padding: 10px 30px;
+    background: linear-gradient(to left, var(--Lime-Green), var( --Bright-Cyan));
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-footer:hover {
+    transform: scale(1.1);
+}
+
+.attribution {    
+    background-color: var(--Dark-Blue);
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    color: var(--White);
+    margin: 0 auto;
+}
+
+.attribution a {
+    color: var(--Lime-Green);
 }
