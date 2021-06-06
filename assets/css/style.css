@@ -166,10 +166,6 @@ header .img-background img {
 .content-services {
     background-color: var(--Light-Grayish-Blue);
     padding: 60px 0;
-    width: 80vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
 }
 
 .display-text {
@@ -266,7 +262,6 @@ header .img-background img {
 footer {
     background-color: var(--Dark-Blue);
     width: 100vw;
-    
 }
 
 .footer-grid {
@@ -336,6 +331,8 @@ footer h3 {
     transform: scale(1.1);
 }
 
+/* copy */
+
 .attribution {
     background-color: var(--Dark-Blue);
     padding: 10px 0;
@@ -349,10 +346,14 @@ footer h3 {
     color: var(--Lime-Green);
 }
 
-@media (max-width:950px) {
-    h1, h2, p, h3 {
+/* media queries */
+
+@media (max-width: 1300px) {
+    h1, h2, p, h3, li, .paragraph, footer h3 {
         justify-content: center;
         text-align: center;
+        width: 100%;
+        padding: 0;
     }
     .footer-grid {
         display: flex;
@@ -360,7 +361,8 @@ footer h3 {
         flex-wrap: wrap;
     }
     .footer-flex {
-        border: 1px solid red;
+        display: grid;
+        justify-items: center;
         min-width: 350px;
     }
     .cards-container {
