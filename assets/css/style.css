@@ -93,6 +93,9 @@ h2 {
     border-radius: 20px;
     font-size: 0.8rem;
 }
+.nav-bar-area nav .menu-hamburger{
+    display: none;
+}
 
 /* ficou daora */
 
@@ -141,6 +144,9 @@ header .img-background object {
 header .img-background img {
     position: absolute;
     top: -200px;
+}
+header  #bg-intro-mobile{
+    display: none;
 }
 
 .movimento {
@@ -384,5 +390,117 @@ footer h3 {
     }
     .item-article {
         margin: 30px;
+    }
+
+    
+}
+@media (max-width:500px){
+    .modal-menu{
+        position: fixed;
+        background: linear-gradient(var(--Dark-Blue), hsl(233, 26%, 24%, 0.1));  
+        width: 100vw;
+        height: 100vh;
+        display: none;
+    }
+
+    .modal-menu.active{
+        display: block;
+    }
+    .nav-bar-area nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bar-area nav .menu{
+        display: none;
+       
+   
+    }
+    .nav-bar-area nav .menu.active{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        width: 90vw;
+        border-radius: 4px;
+        background-color: white;
+        
+       
+        padding: 25px 0px;
+    }
+
+     
+    .nav-bar-area nav .menu li{
+        padding: 10px 0px;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar-area nav .menu li a{
+        padding: 10px 0px;
+        font-weight: 600;
+        color: var(--Dark-Blue);
+        font-size: 1.2rem;
+   
+    }
+
+  
+    .nav-bar-area nav .btn-request{
+        display: none;
+    }
+
+    .nav-bar-area nav .menu-hamburger{
+        border: none;
+        background: transparent;
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+       z-index: 999999;
+      
+    }
+  
+
+    header{
+        flex-direction: column;
+        
+    }
+
+    header .main-text{
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+       
+    }
+
+    header .main-text h1{
+        font-size: 42px;
+        z-index: 10;
+    }
+    header .main-text p{
+        padding-bottom: 20px;
+    }
+    header .main-text .btn-request{
+        font-weight: 500;
+        font-size: 0.9rem;
+        padding: 13px 25px;
+    }
+
+    header {
+        width: 100%;
+    }
+    header .img-background #bg-intro-desktop{
+        display: none;
+    }
+    header  #bg-intro-mobile{
+        display: block;
+       
+    }
+    header .img-background img{
+        display: none;
+    }
+
+    .content-services{
+        margin-top: 50px;
     }
 }

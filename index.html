@@ -18,13 +18,14 @@
 </head>
 
 <body>
-
+  
   <div class="nav-bar-area">
     <nav>
       <ul class="logo">
         <object data="./images/logo.svg" type=""></object>
       </ul>
-      <ul class="menu">
+      <div class="modal-menu"></div>
+      <ul class="menu ">
         <li><a>Home</a></li>
         <li><a>About</a></li>
         <li><a>Contact</a></li>
@@ -34,13 +35,16 @@
       <ul class="btn-request">
         <a href="">Request Invite</a>
       </ul>
-
+      <button type="button" name="btn-mobile" class="menu-hamburger">
+        <object data="./images/icon-hamburger.svg" type=""></object>
+      </button>
     </nav>
   </div>
 
 
   <!-- hero -->
   <header>
+    <object id ="bg-intro-mobile" data="./images/bg-intro-mobile.svg" type=""></object>
     <section class="main-text">
       <h1>Next generation digital banking</h1>
       <p>Take your financial life online. Your Easybank account will be a one-stop-shop
@@ -48,9 +52,11 @@
       <a class="btn-request" href="#">Request Invite</a>
     </section>
     <section class="img-background">
-      <object data="./images/bg-intro-desktop.svg" type=""></object>
+     
+      <object id="bg-intro-desktop" data="./images/bg-intro-desktop.svg" type=""></object>
       <img src="./images/image-mockups.png" alt="" class="movimento" width="700px">
     </section>
+
   </header>
   <!-- conteudo cards -->
 
@@ -249,7 +255,7 @@
     <br>Coded by <a href="https://github.com/angeloengcomp" target="_blank">Angelo Ricardo</a> &
     <a href="https://github.com/ArthurMaciel95" target="_blank">Arthur Rocha</a>.
   </div>
-  
+  <script src="./assets/index.js"></script>
 </body>
 
 </html>
