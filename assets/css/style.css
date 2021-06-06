@@ -89,7 +89,7 @@ h2 {
     text-decoration: none;
     color: var(--White);
     padding: 10px 15px;
-    background: linear-gradient(to left, var(--Lime-Green), var( --Bright-Cyan));
+    background: linear-gradient(to right, var(--Lime-Green), var( --Bright-Cyan));
     border-radius: 20px;
     font-size: 0.8rem;
 }
@@ -125,7 +125,7 @@ header .main-text .btn-request {
     text-decoration: none;
     color: var(--White);
     padding: 10px 15px;
-    background: linear-gradient(to left, var(--Lime-Green), var( --Bright-Cyan));
+    background: linear-gradient(to right, var(--Lime-Green), var( --Bright-Cyan));
     border-radius: 20px;
     font-size: 0.8rem;
     width: fit-content;
@@ -327,7 +327,7 @@ footer h3 {
     text-decoration: none;
     color: var(--White);
     padding: 10px 30px;
-    background: linear-gradient(to left, var(--Lime-Green), var( --Bright-Cyan));
+    background: linear-gradient(to right, var(--Lime-Green), var( --Bright-Cyan));
     border-radius: 20px;
     font-size: 14px;
     transition: 0.3s;
@@ -493,7 +493,8 @@ footer h3 {
         display: none;
     }
     header  #bg-intro-mobile{
-        display: block;
+        display: flex;
+        
        
     }
     header .img-background img{

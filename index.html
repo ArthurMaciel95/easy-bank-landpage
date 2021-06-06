@@ -15,16 +15,35 @@
 
   <title>Frontend Mentor | Easybank landing page</title>
 
+  <script>
+    const btnMenuHamburger = document.querySelector('.menu-hamburger')
+    const menuMobile = document.querySelector('.menu')
+    const modalBackgrond = document.querySelector('.modal-menu')
+
+
+    btnMenuHamburger.addEventListener('click', () => {
+
+
+      menuMobile.classList.toggle('active')
+      modalBackgrond.classList.toggle('active')
+
+
+
+
+      console.log('click')
+    })
+  </script>
 </head>
 
 <body>
-  
+
   <div class="nav-bar-area">
+    <div class="modal-menu"></div>
     <nav>
       <ul class="logo">
         <object data="./images/logo.svg" type=""></object>
       </ul>
-      <div class="modal-menu"></div>
+      
       <ul class="menu ">
         <li><a>Home</a></li>
         <li><a>About</a></li>
@@ -35,16 +54,16 @@
       <ul class="btn-request">
         <a href="">Request Invite</a>
       </ul>
-      <button type="button" name="btn-mobile" class="menu-hamburger">
+      <a name="btn-mobile" class="menu-hamburger" onclick="">
         <object data="./images/icon-hamburger.svg" type=""></object>
-      </button>
+      </a>
     </nav>
   </div>
 
 
   <!-- hero -->
   <header>
-    <object id ="bg-intro-mobile" data="./images/bg-intro-mobile.svg" type=""></object>
+    <object id="bg-intro-mobile" data="./images/bg-intro-mobile.svg" type=""></object>
     <section class="main-text">
       <h1>Next generation digital banking</h1>
       <p>Take your financial life online. Your Easybank account will be a one-stop-shop
@@ -52,7 +71,7 @@
       <a class="btn-request" href="#">Request Invite</a>
     </section>
     <section class="img-background">
-     
+
       <object id="bg-intro-desktop" data="./images/bg-intro-desktop.svg" type=""></object>
       <img src="./images/image-mockups.png" alt="" class="movimento" width="700px">
     </section>
@@ -128,15 +147,15 @@
 
         </div>
       </div>
-      
-       <div class="item-article">
+
+      <div class="item-article">
         <img src="./images/image-restaurant.jpg" alt="">
         <div class="content-article">
           <h4>By Wilson Hutton</h4>
           <h3> Take your Easybank card wherever you go</h3>
           <p>
             We want you to enjoy your travels. This is why we don’t charge any fees on purchases
-            while you’re abroad. We’ll even show you space …  </p>
+            while you’re abroad. We’ll even show you space … </p>
 
         </div>
       </div>
@@ -147,7 +166,7 @@
           <h3> Take your Easybank card wherever you go</h3>
           <p>
             We want you to enjoy your travels. This is why we don’t charge any fees on purchases
-            while you’re abroad. We’ll even show you space …  </p>
+            while you’re abroad. We’ll even show you space … </p>
 
         </div>
       </div>
