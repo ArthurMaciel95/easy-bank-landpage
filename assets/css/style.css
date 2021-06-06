@@ -27,14 +27,24 @@ O QUE ACHA?*/
 }
 
 body, html {
+    background-color: var(--Very-Light-Gray);
     overflow-x: hidden;
     width: 100vw;
     font-size: 18px;
     font-family: 'Public Sans', sans-serif;
 }
 
+h1, h2, h3, p {
+    color: var( --Dark-Blue);
+}
+
+h1 {
+    font-size: 62px;
+    font-weight: 400;
+}
+
 h2 {
-    font-size: 28px;
+    font-size: 42px;
     font-weight: 400;
 }
 
@@ -102,12 +112,6 @@ header .main-text {
     justify-content: center;
 }
 
-header .main-text h1 {
-    color: var( --Dark-Blue);
-    font-size: 2rem;
-    font-weight: 400;
-}
-
 header .main-text p {
     font-size: 1rem;
     color: var(--Grayish-Blue);
@@ -160,7 +164,7 @@ header .img-background img {
 /* content services */
 
 .content-services {
-    background-color: var(--Very-Light-Gray);
+    background-color: var(--Light-Grayish-Blue);
     padding: 60px 0;
 }
 
@@ -184,7 +188,7 @@ header .img-background img {
 
 .item-services, .item-article {
     display: inline-block;
-    max-width: 350px;
+    max-width: 310px;
 }
 
 .item-services h3 {
@@ -193,8 +197,8 @@ header .img-background img {
 }
 
 .item-services p {
-    max-width: 320px;
-    min-width: 320px;
+    max-width: 310px;
+    min-width: 310px;
     margin: 20px 0;
 }
 
@@ -204,6 +208,53 @@ header .img-background img {
     font-size: 18px;
     color: var(--Grayish-Blue);
     line-height: 25px;
+}
+
+/* cards article */
+
+.container-article {
+    padding: 80px 0;
+}
+
+.container-article h2 {
+    margin-bottom: 50px;
+}
+
+.item-article {
+    margin-bottom: 30px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px -5px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+}
+.item-article:hover{
+    transform: scale(1.1);
+}
+
+.content-article {
+    padding: 25px;
+}
+
+.content-article h4 {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--Grayish-Blue);
+    margin-bottom: 10px;
+}
+
+.content-article h3 {
+    width: 250px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content-article p {
+    font-size: 16px;
+    color: var(--Grayish-Blue);
 }
 
 /* footer */
@@ -330,5 +381,8 @@ footer h3 {
     }
     .social-icons li {
         display: inline;
+    }
+    .item-article {
+        margin: 30px;
     }
 }
