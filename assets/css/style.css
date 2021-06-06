@@ -215,6 +215,7 @@ header .img-background img {
 footer {
     background-color: var(--Dark-Blue);
     width: 100vw;
+    
 }
 
 .footer-grid {
@@ -284,8 +285,6 @@ footer h3 {
     transform: scale(1.1);
 }
 
-/* copy */
-
 .attribution {
     background-color: var(--Dark-Blue);
     padding: 10px 0;
@@ -299,14 +298,10 @@ footer h3 {
     color: var(--Lime-Green);
 }
 
-/* media queries */
-
-@media (max-width: 1300px) {
-    h1, h2, p, h3, li, .paragraph, footer h3 {
+@media (max-width:950px) {
+    h1, h2, p, h3 {
         justify-content: center;
         text-align: center;
-        width: 100%;
-        padding: 0;
     }
     .footer-grid {
         display: flex;
@@ -314,25 +309,7 @@ footer h3 {
         flex-wrap: wrap;
     }
     .footer-flex {
-        display: grid;
-        justify-items: center;
+        border: 1px solid red;
         min-width: 350px;
-    }
-    .cards-container {
-        justify-content: center;
-        align-items: center;
-    }
-    .item-services {
-        display: grid;
-        justify-items: center;
-    }
-    .item-services img {
-        margin: 20px 0;
-    }
-    .item-services h3 {
-        margin: 5px 0;
-    }
-    .social-icons li {
-        display: inline;
     }
 }
