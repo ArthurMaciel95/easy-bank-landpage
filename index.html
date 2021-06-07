@@ -15,24 +15,7 @@
 
   <title>Frontend Mentor | Easybank landing page</title>
 
-  <script>
-    const btnMenuHamburger = document.querySelector('.menu-hamburger')
-    const menuMobile = document.querySelector('.menu')
-    const modalBackgrond = document.querySelector('.modal-menu')
-
-
-    btnMenuHamburger.addEventListener('click', () => {
-
-
-      menuMobile.classList.toggle('active')
-      modalBackgrond.classList.toggle('active')
-
-
-
-
-      console.log('click')
-    })
-  </script>
+ 
 </head>
 
 <body>
@@ -54,16 +37,24 @@
       <ul class="btn-request">
         <a href="">Request Invite</a>
       </ul>
-      <a name="btn-mobile" class="menu-hamburger" onclick="">
-        <object data="./images/icon-hamburger.svg" type=""></object>
-      </a>
+      <button type="button" name="btn-mobile" class="menu-hamburger">
+        <div class="hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>    
+        
+      </button>
     </nav>
   </div>
 
 
   <!-- hero -->
   <header>
-    <object id="bg-intro-mobile" data="./images/bg-intro-mobile.svg" type=""></object>
+    <div class="hero-image-mobile">
+      <object id="bg-intro-mobile" data="./images/bg-intro-mobile.svg" type=""></object>
+      <img id="bg-mockup-mobile" src="./images/image-mockups.png" alt="phone image">
+    </div>
     <section class="main-text">
       <h1>Next generation digital banking</h1>
       <p>Take your financial life online. Your Easybank account will be a one-stop-shop
@@ -73,7 +64,7 @@
     <section class="img-background">
 
       <object id="bg-intro-desktop" data="./images/bg-intro-desktop.svg" type=""></object>
-      <img src="./images/image-mockups.png" alt="" class="movimento" width="700px">
+      <img src="./images/image-mockups.png" alt=" phone image" class="movimento" width="700px">
     </section>
 
   </header>
@@ -274,7 +265,7 @@
     <br>Coded by <a href="https://github.com/angeloengcomp" target="_blank">Angelo Ricardo</a> &
     <a href="https://github.com/ArthurMaciel95" target="_blank">Arthur Rocha</a>.
   </div>
-  <script src="./assets/index.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

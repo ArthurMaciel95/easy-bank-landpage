@@ -93,7 +93,8 @@ h2 {
     border-radius: 20px;
     font-size: 0.8rem;
 }
-.nav-bar-area nav .menu-hamburger{
+
+.nav-bar-area nav .menu-hamburger {
     display: none;
 }
 
@@ -145,7 +146,12 @@ header .img-background img {
     position: absolute;
     top: -200px;
 }
-header  #bg-intro-mobile{
+
+header .hero-image-mobile #bg-intro-mobile {
+    display: none;
+}
+
+header .hero-image-mobile #bg-mockup-mobile{
     display: none;
 }
 
@@ -236,7 +242,8 @@ header  #bg-intro-mobile{
     box-shadow: 1px 3px 5px -5px rgba(0, 0, 0, 0.75);
     transition: 0.3s;
 }
-.item-article:hover{
+
+.item-article:hover {
     transform: scale(1.1);
 }
 
@@ -391,117 +398,130 @@ footer h3 {
     .item-article {
         margin: 30px;
     }
-
-    
 }
-@media (max-width:500px){
-    .modal-menu{
+
+@media screen and (max-width:800px) {
+    .modal-menu {
         position: fixed;
-        background: linear-gradient(var(--Dark-Blue), hsl(233, 26%, 24%, 0.1));  
+        background: linear-gradient(var(--Dark-Blue), hsl(233, 26%, 24%, 0.1));
         width: 100vw;
         height: 100vh;
         display: none;
+        z-index: 999;
+        opacity: 1;
     }
-
     .modal-menu.active{
         display: block;
     }
-    .nav-bar-area nav{
+   
+    .nav-bar-area nav {
         justify-content: space-between;
         align-items: center;
+        
     }
-    .nav-bar-area nav .menu{
+    .nav-bar-area nav .menu {
         display: none;
-       
-   
+        
     }
-    .nav-bar-area nav .menu.active{
+    .nav-bar-area nav .menu.active {
         position: absolute;
         display: flex;
         flex-direction: column;
         top: 100px;
-        width: 90vw;
+        width: 90%;
         border-radius: 4px;
         background-color: white;
-        
-       
         padding: 25px 0px;
+        margin: 0 auto;
+       
     }
-
-     
-    .nav-bar-area nav .menu li{
+    .nav-bar-area nav .menu li {
         padding: 10px 0px;
         font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .nav-bar-area nav .menu li a{
+    .nav-bar-area nav .menu li a {
         padding: 10px 0px;
         font-weight: 600;
         color: var(--Dark-Blue);
         font-size: 1.2rem;
-   
     }
-
-  
-    .nav-bar-area nav .btn-request{
+    .nav-bar-area nav .btn-request {
         display: none;
     }
-
-    .nav-bar-area nav .menu-hamburger{
-        border: none;
-        background: transparent;
+    .nav-bar-area nav .menu-hamburger {
+        /* background-image: url(../img/icon-hamburger.svg); */
+        background-size: cover;
         display: block;
-        padding: 10px;
+        padding: 20px;
         cursor: pointer;
-       z-index: 999999;
-      
+        z-index: 99;
+        border: none;
+        background-color: var(--White);
     }
-  
-
-    header{
+    .nav-bar-area nav .hamburguer span{
+        display: block;
+        margin: 5px;
+        background-color: var(--Dark-Blue);
+        width: 30px;
+        height: 1px;
+    }
+    header {
         flex-direction: column;
-        
+        height: auto;
     }
-
-    header .main-text{
-        
+    header .main-text {
         width: 100%;
         display: flex;
         align-items: center;
-       
+        margin-top: 23rem;
     }
-
-    header .main-text h1{
+    header .main-text h1 {
         font-size: 42px;
         z-index: 10;
     }
-    header .main-text p{
+    header .main-text p {
         padding-bottom: 20px;
     }
-    header .main-text .btn-request{
+    header .main-text .btn-request {
         font-weight: 500;
         font-size: 0.9rem;
         padding: 13px 25px;
     }
-
     header {
+        display: flex;
         width: 100%;
     }
-    header .img-background #bg-intro-desktop{
-        display: none;
-    }
-    header  #bg-intro-mobile{
-        display: flex;
-        
-       
-    }
-    header .img-background img{
+    header .img-background #bg-intro-desktop {
         display: none;
     }
 
-    .content-services{
+    header .hero-image-mobile{
+        width: 100%;
+        position: relative;
+    }
+    header .hero-image-mobile #bg-intro-mobile {
+        position: absolute;
+        width: 100%;
+        display: block;
+       
+    }
+    header .hero-image-mobile #bg-mockup-mobile{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        top: -100px;
+        z-index: 111;
+      
+
+    }
+    header .img-background{
+        display: none;
+    }
+  
+    .content-services {
         margin-top: 50px;
     }
 }
