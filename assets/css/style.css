@@ -88,7 +88,7 @@ h2 {
 .nav-bar-area nav .btn-request a {
     text-decoration: none;
     color: var(--White);
-    padding: 10px 15px;
+    padding: 10px 25px;
     background: linear-gradient(to right, var(--Lime-Green), var( --Bright-Cyan));
     border-radius: 20px;
     font-size: 0.8rem;
@@ -96,6 +96,15 @@ h2 {
 
 .nav-bar-area nav .menu-hamburger {
     display: none;
+}
+
+.menu a {
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    border-bottom: 5px solid var(--Lime-Green);
 }
 
 /* ficou daora */
@@ -125,12 +134,17 @@ header .main-text p {
 header .main-text .btn-request {
     text-decoration: none;
     color: var(--White);
-    padding: 10px 15px;
+    padding: 10px 25px;
     background: linear-gradient(to right, var(--Lime-Green), var( --Bright-Cyan));
     border-radius: 20px;
     font-size: 0.8rem;
     width: fit-content;
     margin-top: 15px;
+    transition: 0.3s;
+}
+
+header .main-text .btn-request:hover {
+    transform: scale(1.1);
 }
 
 header .img-background {
@@ -151,7 +165,7 @@ header .hero-image-mobile #bg-intro-mobile {
     display: none;
 }
 
-header .hero-image-mobile #bg-mockup-mobile{
+header .hero-image-mobile #bg-mockup-mobile {
     display: none;
 }
 
@@ -410,18 +424,15 @@ footer h3 {
         z-index: 999;
         opacity: 1;
     }
-    .modal-menu.active{
+    .modal-menu.active {
         display: block;
     }
-   
     .nav-bar-area nav {
         justify-content: space-between;
         align-items: center;
-        
     }
     .nav-bar-area nav .menu {
         display: none;
-        
     }
     .nav-bar-area nav .menu.active {
         position: absolute;
@@ -433,7 +444,6 @@ footer h3 {
         background-color: white;
         padding: 25px 0px;
         margin: 0 auto;
-       
     }
     .nav-bar-area nav .menu li {
         padding: 10px 0px;
@@ -461,7 +471,7 @@ footer h3 {
         border: none;
         background-color: var(--White);
     }
-    .nav-bar-area nav .hamburguer span{
+    .nav-bar-area nav .hamburguer span {
         display: block;
         margin: 5px;
         background-color: var(--Dark-Blue);
@@ -497,8 +507,7 @@ footer h3 {
     header .img-background #bg-intro-desktop {
         display: none;
     }
-
-    header .hero-image-mobile{
+    header .hero-image-mobile {
         width: 100%;
         position: relative;
     }
@@ -506,21 +515,17 @@ footer h3 {
         position: absolute;
         width: 100%;
         display: block;
-       
     }
-    header .hero-image-mobile #bg-mockup-mobile{
+    header .hero-image-mobile #bg-mockup-mobile {
         position: absolute;
         display: flex;
         width: 100%;
         top: -100px;
         z-index: 111;
-      
-
     }
-    header .img-background{
+    header .img-background {
         display: none;
     }
-  
     .content-services {
         margin-top: 50px;
     }
