@@ -50,7 +50,7 @@ h2 {
 
 .container {
     max-width: 1440px;
-  
+    width: 80vw;
     margin: 0 auto;
     padding: 0 10px;
 }
